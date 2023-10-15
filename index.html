@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>tailwind</title>
+</head>
+<body  class="bg-[#2B2D33]">
+    <nav class="bg-[#2B2D33] shadow-xl sticky top-0 z-10 ">
+        <div class="container mx-auto">
+             <div class="sm:flex justify-between items-center py-5">
+                  <div class="text-center mb-3">
+                    <!-- <a href="#" class="text-white text-xl sm:text-3xl font-bold"> <span class="text-[#F65023]">S</span>mart Cod<span class="text-[#F65023]">ers</span></a> -->
+                    <a href="#" class="text-white text-xl sm:text-3xl font-bold"> <span class="text-[#F65023]">P</span>ANYONEER</a>
+                      
+                  </div>
+
+                  <ul class="sm:flex text-xl text-white text-center border-t sm:border-none">
+                       <li class="mt-4 sm:mt-0"> <a href="#" class="p-3 text-[#F65023]"> Home </a> </li>
+                       <li> <a href="#" class="p-3 hover:text-[#F65023]"> Products </a> </li>
+                       <li> <a href="#" class="p-3 hover:text-[#F65023]"> Blogs </a> </li>
+                       <li> <a href="#" class="p-3 hover:text-[#F65023]"> Portfolio </a> </li>
+                       <li> <a href="#" class="p-3 hover:text-[#F65023]"> Contact </a> </li>
+                  </ul>
+             </div>
+        </div>
+   </nav>
+
+    <section class=" w-3/4 mx-auto mt-20 ">
+            <header>
+                <h1 class="text-center text-5xl text-black-700 my-10 text-white ">WELLCOME TO OUR<span class="text-[#F65023]"> P</span>AYONEER</h1>
+            </header>
+   <div class="grid grid-cols-3 gap-5">
+    <div class="bg-yellow-500 text-white p-8 rounded-xl">
+        <h3 class="text-3xl">Deposite</h3>
+        <h4 class="text-4xl font-medium">$ <span id="Deposite-total ">000</span></h4>
+    </div>
+    
+    <div class="bg-green-500 text-white p-8 rounded-xl">
+        <h3 class="text-3xl">withdraw</h3>
+        <h4  class="text-4xl font-medium">$ <span id=">withdraw">000</span></h4>
+    </div>
+    
+    <div class="bg-blue-500 text-white p-8 rounded-xl">
+        <h3 class="text-3xl">Balance</h3>
+        <h4  class="text-4xl font-medium">$ <span id="Balance-total">000</span></h4>
+    </div>
+   </div>
+  <div class="grid grid-cols-2 gap-5 mt-5">
+    <div class="bg-red-500 p-8 rounded-lg  text-white space-y-4">
+        <h2 class-="text-2xl"> Please Deposite Your Amount</h2>
+        <input id="deposit-input" class="w-3/4 h-8 rounded px-3 border-2 border-slate-500  text-black"
+        type="number" min="0" max="34"
+        placeholder=" $ please give deposit Amount ">
+        <button id="deposit-button " 
+        class="text-white bg-blue-500 rounded font-semibold py-2 px-3 block ">Deposit</button>
+    </div>
+    <div class="bg-gray-300 p-8 rounded-lg  text-white space-y-4">
+        <h2 class-="text-2xl"> Please withdraw Your Amount</h2>
+        <input id="withdraw-input" class="w-3/4 h-8 rounded px-3 border-2 border-slate-500  text-black"
+        type="number" min="0" max="34"
+        placeholder=" $ please give withdraw Amount ">
+        <button id="deposit-button " 
+        class="text-white bg-blue-500 rounded font-semibold py-2 px-3 block ">withdraw</button>
+    </div>
+
+  </div>
+    </section>
+</body>
+</html>
